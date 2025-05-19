@@ -85,7 +85,7 @@ enable
 configure terminal
 hostname Switch0
 banner motd # Unauthorized access is prohibited. #
-# you can use your own secret password
+# you can use your own secret password to secure the CLI
 enable secret Sw1tch0Secret! 
 service password-encryption
 # you can use your domain name
@@ -120,6 +120,65 @@ copy running-config startup-config
 Apply a similar configuration for Switch1 using the `192.168.2.x` range, I utilized `192.168.2.100` to keep it similar.
 
 ---
+## 🚀 Router Configuration – Step-by-Step Setup
+
+### 1. Enter Privileged EXEC Mode
+
+```bash
+enable
+```
+
+### 2. Enter Global Configuration Mode
+
+```bash
+configure terminal
+```
+
+### 3. Set Hostname and Security
+
+```bash
+hostname R1
+banner motd # Unauthorized access is prohibited. #
+# You can choose your secret pass to secure the CLI
+enable secret ClassC0nfig!
+service password-encryption
+# Remember to use your selected domain name
+ip domain-name tadiuslab.local
+# Set local dns, and time
+ip name-server 8.8.8.8
+ip domain-lookup
+clock timezone EST -5
+```
+
+### 4. Configure Router Interfaces
+
+Notice how all Router interfaces in each subnet is the first device on the network!
+
+1. Connect Subnet A to the router via interface g0/0.
+
+```bash
+interface g0/0
+ description Connected to Switch0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+exit
+```
+2. Connect Subnet B to the router via interface g0/1.
+```bash
+interface g0/1
+ description Connected to Switch1
+ ip address 192.168.2.1 255.255.255.0
+ no shutdown
+exit
+```
+3. Connect router to WAN Cloud via interface g0/2.
+```bash
+interface g0/2
+ description Connected to WAN/Cloud
+ ip address 192.168.3.1 255.255.255.0
+ no shutdown
+exit
+```
 
 
 
