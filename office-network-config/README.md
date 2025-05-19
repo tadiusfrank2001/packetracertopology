@@ -196,6 +196,13 @@ line vty 0 4
 exit
 ```
 
+### 6. Save the Configuration
 
+```bash
+end
+copy running-config startup-config
+```
+
+---
 
 
