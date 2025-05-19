@@ -232,6 +232,8 @@ ping <Other PC IP> // Cross-subnet ping test
 
 ![PC1toPC2](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/PC1toPC2.png)
 
+Notice some loss, from PC1 to PC2 because the system had perform ARP resolution and MAC address registration to then forward a packet from PC1 to the router interface g0/0 so the router can look at its routing table (after finding the network ID for the destination IP by bitwise AND the subnet mask and destination IP) and forward it to G0/1 where PC2 is a part of.
+
 From Router CLI:
 
 ```bash
