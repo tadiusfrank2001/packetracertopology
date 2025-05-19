@@ -227,6 +227,7 @@ ping 192.168.2.1   // PC2/PC3 → Router G0/1
 ping <Other PC IP> // Cross-subnet ping test
 ```
 ![PC0toRouter](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/PC0toRouter.png)
+
 ![PC2toRouter](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/PC2toRouter.png)
 ![PC1toPC2](url)
 
