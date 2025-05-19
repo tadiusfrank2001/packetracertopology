@@ -1,11 +1,19 @@
-# 🧠 Cisco Packet Tracer Network Setup
+# 📘 Repository: `packetracertopologies`
 
-This project involves the design and configuration of a small office network using Cisco networking equipment within Cisco Packet Tracer. The objective is to simulate a functional, secure, and remotely manageable network using a Cisco 2911 router, two Cisco 2960 switches, and four generic PCs.
+This repository contains a collection of **Cisco Packet Tracer** projects designed to help reinforce and practice core networking concepts. Each project focuses on different aspects of networking, including:
 
-The network is logically divided into two subnets:
+- 📶 **Network Media** (cables, connectors, physical layout)  
+- 💻 **Devices** (routers, switches, PCs, servers)  
+- 🔗 **Topologies** (star, mesh, hybrid, etc.)  
+- 🧮 **Subnetting & IP Addressing**  
+- 🚦 **Routing & Switching**  
+- 🌐 **Network Types** (LAN, WAN, VLAN, etc.)  
+- 🔐 **Basic Security & Remote Access**  
 
-- **Subnet A (192.168.1.0/24)** connects to GigabitEthernet0/0 on the router, linking to Switch0 and PCs PC0 & PC1.
-- **Subnet B (192.168.2.0/24)** connects to GigabitEthernet0/1, linking to Switch1 and PCs PC2 & PC3.
-- A third interface, **GigabitEthernet0/2**, is configured with the IP address 192.168.3.1 and reserved for potential WAN/cloud connectivity simulation.
+The goal of this repo is to use **Cisco Packet Tracer** as a hands-on learning environment for developing practical skills and gaining a deeper understanding of how real-world networks are designed, built, and configured.
 
----
+Each folder includes:
+- `.pkt` files (Packet Tracer network simulations)
+- A `README.md` with setup details and learning outcomes
+
+> 🛠️ Ideal for students, self-learners, or anyone preparing for Cisco certifications (e.g., CCNA).
