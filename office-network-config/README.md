@@ -204,5 +204,17 @@ copy running-config startup-config
 ```
 
 ---
+## 🔌 Cabling – Physical Connections
 
+Use **Copper Straight-Through** cables for all device connections:
+
+- **PCs to Switches:** PC FastEthernet → Switch FastEthernet (e.g., PC0 → Switch0 Fa0/1)
+- **Switches to Router:** 
+  - Switch0 → Router G0/0  
+  - Switch1 → Router G0/1
+- **Router to WAN (Cloud):** Router G0/2 → Cloud Ethernet
+
+Ensure ports are properly selected and status indicators confirm successful links (green triangles that indicate traffic between devices).
+
+---
 
