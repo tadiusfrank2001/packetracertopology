@@ -180,5 +180,22 @@ interface g0/2
 exit
 ```
 
+### 5. Secure Access Lines
+
+```bash
+line console 0
+ password c0nsol3Pass
+ login
+ logging synchronous
+exit
+
+line vty 0 4
+ password vtyPa55word
+ login
+ transport input all
+exit
+```
+
+
 
 
