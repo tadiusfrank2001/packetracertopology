@@ -20,7 +20,9 @@ The network is logically divided into two subnets:
 - **Switches:** 2 Cisco 2960  
 - **PCs:** 4 Generic PCs  
 - **Cloud/WAN:** 1 Simulated WAN (via Cloud object)  
-- **Cabling:** Copper Straight-Through  
+- **Cabling:** Copper Straight-Through
+
+---
 
 ### 🔗 Network Segments:
 
@@ -43,3 +45,24 @@ The network is logically divided into two subnets:
 | Cables      | Copper Straight-Through | 6        |
 
 ---
+
+
+## 💻 PC Configuration – Static IP Addressing
+
+Each PC was manually configured with an IP address in its respective subnet and the default gateway pointing to the router interface on that subnet.
+
+### Example (PC0 in Subnet A):
+
+| Field          | Value             |
+|----------------|------------------|
+| IP Address     | 192.168.1.10     |
+| Subnet Mask    | 255.255.255.0    |
+| Default Gateway| 192.168.1.1      |
+
+Repeat with incremental IPs for PC1, PC2, PC3 in their respective subnets.
+
+---
+
+
+
+
