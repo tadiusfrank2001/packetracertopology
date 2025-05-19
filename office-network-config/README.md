@@ -11,3 +11,24 @@ The network is logically divided into two subnets:
 ---
 
 ![Network Topo Figure](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/office_net_topology.png)
+
+---
+
+## 🖼️ Topology Overview
+
+- **Router:** 1 Cisco 2911  
+- **Switches:** 2 Cisco 2960  
+- **PCs:** 4 Generic PCs  
+- **Cloud/WAN:** 1 Simulated WAN (via Cloud object)  
+- **Cabling:** Copper Straight-Through  
+
+### 🔗 Network Segments:
+
+| Subnet        | IP Range           | Devices                              |
+|---------------|--------------------|---------------------------------------|
+| Subnet A      | 192.168.1.0/24     | PC0, PC1, Switch0, Router G0/0        |
+| Subnet B      | 192.168.2.0/24     | PC2, PC3, Switch1, Router G0/1        |
+| WAN Segment   | 192.168.3.0/24     | Router G0/2, Cloud (simulated WAN)    |
+
+---
+
