@@ -10,4 +10,4 @@ The network is logically divided into two subnets:
 
 ---
 
-
+![Network Topo Figure](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/office_net_topology.png)
