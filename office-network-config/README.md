@@ -229,7 +229,7 @@ ping <Other PC IP> // Cross-subnet ping test
 ![PC0toRouter](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/PC0toRouter.png)
 
 ![PC2toRouter](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/PC2toRouter.png)
-![PC1toPC2](url)
+![PC1toPC2](https://github.com/tadiusfrank2001/packetracertopology/blob/main/office-network-config/PC1toPC2.png)
 
 From Router CLI:
 
