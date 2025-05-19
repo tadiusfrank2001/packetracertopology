@@ -1,4 +1,4 @@
-# 📘 Repository: `packetracertopologies`
+# 📘 Repository: `packetracertopology`
 
 This repository contains a collection of **Cisco Packet Tracer** projects designed to help reinforce and practice core networking concepts. Each project focuses on different aspects of networking, including:
 
