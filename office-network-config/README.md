@@ -59,10 +59,67 @@ Each PC was manually configured with an IP address in its respective subnet and 
 | Subnet Mask    | 255.255.255.0    |
 | Default Gateway| 192.168.1.1      |
 
-Repeat with incremental IPs for PC1, PC2, PC3 in their respective subnets.
+Repeat with incremental IPs for PC1.
+
+### Example (PC2 in Subnet B):
+
+| Field          | Value             |
+|----------------|------------------|
+| IP Address     | 192.168.2.10     |
+| Subnet Mask    | 255.255.255.0    |
+| Default Gateway| 192.168.1.1      |
+
+
+Repeat with incremental IP for PC3.
 
 ---
 
+## 🖧 Switch Configuration – VLAN 1 Setup
+
+Both Switch0 and Switch1 were configured to allow remote management via VLAN 1 and secured access:
+
+### Switch0 Example:
+
+```bash
+enable
+configure terminal
+hostname Switch0
+banner motd # Unauthorized access is prohibited. #
+# you can use your own secret password
+enable secret Sw1tch0Secret! 
+service password-encryption
+# you can use your domain name
+ip domain-name tadiuslab.local
+interface vlan 1
+# the host ID of the router can be anything within 2-9 and 12-254 ranges
+ip address 192.168.1.100 255.255.255.0
+# now we can implement our config
+no shutdown
+exit
+
+
+ip default-gateway 192.168.1.1
+
+# Set up console security
+line console 0
+password c0nsol3Sw0
+login
+logging synchronous
+exit
+# Set up VTY
+line vty 0 4
+password vtySw0Pass
+login
+transport input all
+exit
+end
+# startup our config so our switch operates with our configs
+copy running-config startup-config
+```
+
+Apply a similar configuration for Switch1 using the `192.168.2.x` range, I utilized `192.168.2.100` to keep it similar.
+
+---
 
 
 
