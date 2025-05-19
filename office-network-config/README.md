@@ -217,4 +217,26 @@ Use **Copper Straight-Through** cables for all device connections:
 Ensure ports are properly selected and status indicators confirm successful links (green triangles that indicate traffic between devices).
 
 ---
+## 🧪 Testing – Verify Connectivity
+
+Use the following from each PC terminal:
+
+```bash
+ping 192.168.1.1   // PC0/PC1 → Router G0/0
+ping 192.168.2.1   // PC2/PC3 → Router G0/1
+ping <Other PC IP> // Cross-subnet ping test
+```
+![PC1toRouter](url)
+![PC2toRouter](url)
+![PC1toPC2](url)
+
+From Router CLI:
+
+```bash
+show ip interface brief
+show running-config
+```
+![ipinterfacebrief](url)
+
+---
 
