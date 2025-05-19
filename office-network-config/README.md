@@ -32,3 +32,14 @@ The network is logically divided into two subnets:
 
 ---
 
+## 🧰 Devices Used
+
+| Device Type | Model       | Quantity |
+|-------------|-------------|----------|
+| Router      | Cisco 2911  | 1        |
+| Switch      | Cisco 2960  | 2        |
+| PC          | Generic PC  | 4        |
+| Cloud       | Generic WAN | 1        |
+| Cables      | Copper Straight-Through | 6        |
+
+---
