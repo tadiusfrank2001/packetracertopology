@@ -16,4 +16,11 @@ Each folder includes:
 - `.pkt` files (Packet Tracer network simulations)
 - A `README.md` with setup details and learning outcomes
 
+
 > 🛠️ Ideal for students, self-learners, or anyone preparing for Cisco certifications (e.g., CCNA).
+
+## 🗺️ Network Topologies Showcase
+
+Explore examples of different network topologies implemented in Packet Tracer:
+
+1. [Small Office Netowork](https://github.com/tadiusfrank2001/packetracertopology/tree/main/office-network-config)
