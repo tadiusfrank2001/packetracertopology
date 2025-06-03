@@ -1,3 +1,16 @@
+
+## 📑 Table of Contents
+
+- [🧠 Cisco Packet Tracer Network Setup](#-cisco-packet-tracer-network-setup)
+- [🖼️ Topology Overview](#️-topology-overview)
+- [🔗 Network Segments](#-network-segments)
+- [🧰 Devices Used](#-devices-used)
+- [💻 PC Configuration – Static IP Addressing](#-pc-configuration--static-ip-addressing)
+- [🖧 Switch Configuration – VLAN 1 Setup](#-switch-configuration--vlan-1-setup)
+- [🚀 Router Configuration – Step-by-Step Setup](#-router-configuration--step-by-step-setup)
+- [🔌 Cabling – Physical Connections](#-cabling--physical-connections)
+- [🧪 Testing – Verify Connectivity](#-testing--verify-connectivity)
+
 # 🧠 Cisco Packet Tracer Network Setup
 
 This project involves the design and configuration of a small office network using Cisco networking equipment within Cisco Packet Tracer. The objective is to simulate a functional, secure, and remotely manageable network using a Cisco 2911 router, two Cisco 2960 switches, and four generic PCs.
