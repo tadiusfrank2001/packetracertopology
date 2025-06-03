@@ -23,4 +23,4 @@ Each folder includes:
 
 Explore examples of different network topologies implemented in Packet Tracer:
 
-1. [Small Office Netowork](https://github.com/tadiusfrank2001/packetracertopology/tree/main/office-network-config)
+1. [Small Office Network](https://github.com/tadiusfrank2001/packetracertopology/tree/main/office-network-config)
